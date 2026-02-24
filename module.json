@@ -1,0 +1,35 @@
+{
+  "id": "fvtt-daggerheart-art",
+  "title": "Official art for Foundryborn",
+  "description": "Official art for Foundryborn",
+  "version": "1.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.351"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "daggerheart",
+        "type": "system",
+        "compatibility": {
+          "minimum": "1.2.1",
+          "verified": "1.2.1"
+        }
+      }
+    ]
+  },
+  "scripts": [
+    "scripts/main.js"
+  ],
+    "authors": [
+        {
+            "name": "Безусловный Андрей",
+            "url": "https://boosty.to/happytreedice",
+            "discord": "billibow",
+            "flags": {}
+        }
+    ],
+  "manifest": "",
+  "download": ""
+}
