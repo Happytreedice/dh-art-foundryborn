@@ -30,6 +30,6 @@
             "flags": {}
         }
     ],
-  "manifest": "",
+  "manifest": "https://raw.githubusercontent.com/Happytreedice/dh-art-foundryborn/refs/heads/main/module.json",
   "download": ""
 }

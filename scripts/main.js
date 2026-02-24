@@ -44,37 +44,37 @@ Hooks.once("init", () => {
   const originalGetIndex = CompendiumCollection.prototype.getIndex;
 
   CompendiumCollection.prototype.getIndex = async function (options = {}) {
-    // Принудительно запрашиваем поле 'img', чтобы мы могли его заменить.
-    // Если его не запросить, Foundry загрузит только ID и Name.
-    if (options.fields) {
-      if (!options.fields.includes("img")) options.fields.push("img");
-    } else {
-      options.fields = ["img"];
+    const packId = this.collection;
+    const mapping = MAPPING_DATA[packId];
+    const hasMapping = MAPPING_DATA_LOADED && !!mapping;
+
+    // Поле "img" добавляем только для паков, где реально есть замены.
+    let requestOptions = options;
+    if (hasMapping) {
+      requestOptions = { ...options };
+      const fields = Array.isArray(options.fields) ? [...options.fields] : [];
+      if (!fields.includes("img")) fields.push("img");
+      requestOptions.fields = fields;
     }
 
     // Вызываем оригинал, чтобы получить данные из БД
-    const index = await originalGetIndex.call(this, options);
+    const index = await originalGetIndex.call(this, requestOptions);
 
-    // Если маппинг не готов, отдаем как есть
-    if (!MAPPING_DATA_LOADED) return index;
-
-    const packId = this.collection;
-    const mapping = MAPPING_DATA[packId];
+    // Если маппинг не готов или для пака нет правил — отдаём как есть.
+    if (!hasMapping) return index;
 
     // Если для этого пака есть правила замены
-    if (mapping) {
-      index.forEach(entry => {
-        const data = mapping[entry._id];
-        if (data && data.img) {
-          // Подменяем иконку в списке
-          entry.img = data.img;
+    index.forEach(entry => {
+      const data = mapping[entry._id];
+      if (data && data.img) {
+        // Подменяем иконку в списке
+        entry.img = data.img;
 
-          // Для совместимости с разными версиями UI (v10-v12)
-          if (entry.thumb) entry.thumb = data.img;
-          if (entry.thumbnail) entry.thumbnail = data.img;
-        }
-      });
-    }
+        // Для совместимости с разными версиями UI (v10-v12)
+        if (entry.thumb) entry.thumb = data.img;
+        if (entry.thumbnail) entry.thumbnail = data.img;
+      }
+    });
 
     return index;
   };
@@ -84,9 +84,9 @@ Hooks.once("init", () => {
   // Сохраняем оригинальный метод получения документа
   const originalGetDocument = CompendiumCollection.prototype.getDocument;
 
-  CompendiumCollection.prototype.getDocument = async function (id) {
+  CompendiumCollection.prototype.getDocument = async function (id, options) {
     // Получаем оригинальный документ из БД
-    const doc = await originalGetDocument.call(this, id);
+    const doc = await originalGetDocument.call(this, id, options);
 
     if (!MAPPING_DATA_LOADED || !doc) return doc;
 
@@ -137,7 +137,9 @@ Hooks.once("ready", async () => {
       pack.clear();
 
       // Если окно этого компендиума открыто прямо сейчас — перерисовываем его
-      pack.apps.forEach(app => app.render());
+      for (const app of Object.values(pack.apps ?? {})) {
+        if (typeof app?.render === "function") app.render();
+      }
     }
   }
 
