@@ -205,38 +205,6 @@
         "QAXXiOKBDmCTauHD": {
             "__DOCUMENT_NAME__": "Cult Ritual",
             "img": "modules/happytreedice-daggerheart-art/pack/environments/cult-ritual.webp"
-        },
-        "oY69NN4rYxoRE4hl": {
-            "__DOCUMENT_NAME__": "Burning Heart of the Woods",
-            "img": "modules/happytreedice-daggerheart-art/pack/environments/burning-heart-of-the-woods.webp"
-        },
-        "1eZ32Esq7rfZOjlu": {
-            "__DOCUMENT_NAME__": "Castle Siege",
-            "img": "modules/happytreedice-daggerheart-art/pack/environments/castle-siege.webp"
-        },
-        "LPpfdlNKqiZIl04w": {
-            "__DOCUMENT_NAME__": "Cliffside Ascent",
-            "img": "modules/happytreedice-daggerheart-art/pack/environments/cliffside-ascent.webp"
-        },
-        "dsA6j69AnaJhUyqH": {
-            "__DOCUMENT_NAME__": "Hallowed Temple",
-            "img": "modules/happytreedice-daggerheart-art/pack/environments/hallowed-temple.webp"
-        },
-        "OzYbizKraK92FDiI": {
-            "__DOCUMENT_NAME__": "Haunted City",
-            "img": "modules/happytreedice-daggerheart-art/pack/environments/haunted-city.webp"
-        },
-        "acMu9wJrMZZzLSTJ": {
-            "__DOCUMENT_NAME__": "Mountain Pass",
-            "img": "modules/happytreedice-daggerheart-art/pack/environments/mountain-pass.webp"
-        },
-        "YezryR32uo39xRxW": {
-            "__DOCUMENT_NAME__": "Outpost Town",
-            "img": "modules/happytreedice-daggerheart-art/pack/environments/outpost-town.webp"
-        },
-        "h3KyRL7AshhLAmcH": {
-            "__DOCUMENT_NAME__": "Necromancer’s Ossuary",
-            "img": "modules/happytreedice-daggerheart-art/pack/environments/necromancer-ossuary.webp"
         }
     },
     "daggerheart.adversaries": {
@@ -355,98 +323,6 @@
         "MI126iMOOobQ1Obn": {
             "__DOCUMENT_NAME__": "Hydra",
             "img": "modules/happytreedice-daggerheart-art/pack/adversaries/hydra.webp"
-        },
-        "G7jiltRjgvVhZewm": {
-            "__DOCUMENT_NAME__": "Adult Flickerfly",
-            "img": "modules/happytreedice-daggerheart-art/pack/adversaries/flickerfly-adult.webp"
-        },
-        "vNIbYQ4YSzNf0WPE": {
-            "__DOCUMENT_NAME__": "Apprentice Assassin",
-            "img": "modules/happytreedice-daggerheart-art/pack/adversaries/assassin-apprentice.webp"
-        },
-        "2UeZ0tEe7AzgSJNd": {
-            "__DOCUMENT_NAME__": "Brawny Zombie",
-            "img": "modules/happytreedice-daggerheart-art/pack/adversaries/zombie-brawny.webp"
-        },
-        "hxZ0sgoFJubh5aj6": {
-            "__DOCUMENT_NAME__": "Fallen Warlord: Realm-Breaker",
-            "img": "modules/happytreedice-daggerheart-art/pack/adversaries/fallen-warlord-realm-breaker.webp"
-        },
-        "6hbqmxDXFOzZJDk4": {
-            "__DOCUMENT_NAME__": "Huge Green Ooze",
-            "img": "modules/happytreedice-daggerheart-art/pack/adversaries/huge-green-ooze.webp"
-        },
-        "5Lh1T0zaT8Pkr2U2": {
-            "__DOCUMENT_NAME__": "Jagged Knife Bandit",
-            "img": "modules/happytreedice-daggerheart-art/pack/adversaries/jagged-knife-bandit.webp"
-        },
-        "MbBPIOxaxXYNApXz": {
-            "__DOCUMENT_NAME__": "Jagged Knife Hexer",
-            "img": "modules/happytreedice-daggerheart-art/pack/adversaries/jagged-knife-hexer.webp"
-        },
-        "MYXmTx2FHcIjdfYZ": {
-            "__DOCUMENT_NAME__": "Juvenile Flickerfly",
-            "img": "modules/happytreedice-daggerheart-art/pack/adversaries/flickerfly-juvenile.webp"
-        },
-        "dNta0cUzr96xcFhf": {
-            "__DOCUMENT_NAME__": "Master Assassin",
-            "img": "modules/happytreedice-daggerheart-art/pack/adversaries/master-assassin.webp"
-        },
-        "sRn4bqerfARvhgSV": {
-            "__DOCUMENT_NAME__": "Minor Chaos Elemental",
-            "img": "modules/happytreedice-daggerheart-art/pack/adversaries/minor-elemental-chaos.webp"
-        },
-        "DscWkNVoHak6P4hh": {
-            "__DOCUMENT_NAME__": "Minor Fire Elemental",
-            "img": "modules/happytreedice-daggerheart-art/pack/adversaries/minor-elemental-fire.webp"
-        },
-        "9rVlbJVrDNn1x7PS": {
-            "__DOCUMENT_NAME__": "Red Ooze",
-            "img": "modules/happytreedice-daggerheart-art/pack/adversaries/red-ooze.webp"
-        },
-        "gP3fWTLzSFnpA8EJ": {
-            "__DOCUMENT_NAME__": "Rotted Zombie",
-            "img": "modules/happytreedice-daggerheart-art/pack/adversaries/zombie-rotted.webp"
-        },
-        "aLkLFuVoKz2NLoBK": {
-            "__DOCUMENT_NAME__": "Tiny Green Ooze",
-            "img": "modules/happytreedice-daggerheart-art/pack/adversaries/tiny-green-ooze.webp"
-        },
-        "1fkLQXVtmILqfJ44": {
-            "__DOCUMENT_NAME__": "Tiny Red Ooze",
-            "img": "modules/happytreedice-daggerheart-art/pack/adversaries/tiny-red-ooze.webp"
-        },
-        "h5RuhzGL17dW5FBT": {
-            "__DOCUMENT_NAME__": "Assassin Poisoner",
-            "img": "modules/happytreedice-daggerheart-art/pack/adversaries/assassinpoisoner.webp"
-        },
-        "7ai2opemrclQe3VF": {
-            "__DOCUMENT_NAME__": "Knight of the Realm",
-            "img": "modules/happytreedice-daggerheart-art/pack/adversaries/knightofthe-realm.webp"
-        },
-        "aTljstqteGoLpCBq": {
-            "__DOCUMENT_NAME__": "Jagged Knife Lieutenant",
-            "img": "modules/happytreedice-daggerheart-art/pack/adversaries/jagge-knife-lieutenant-single.webp"
-        },
-        "eArAPuB38CNR0ZIM": {
-            "__DOCUMENT_NAME__": "Volcanic Dragon: Molten Scourge",
-            "img": "modules/happytreedice-daggerheart-art/pack/adversaries/volcanic-molten-sourge.webp"
-        },
-        "EQTOAOUrkIvS2z88": {
-            "__DOCUMENT_NAME__": "Patchwork Zombie Hulk",
-            "img": "modules/happytreedice-daggerheart-art/pack/adversaries/zombie-patchwork.webp"
-        },
-        "RXkZTwBRi4dJ3JE5": {
-            "__DOCUMENT_NAME__": "Fallen Warlord: Undefeated Champion",
-            "img": "modules/happytreedice-daggerheart-art/pack/adversaries/fallen-undefeated-champion.webp"
-        },
-        "pMuXGCSOQaxpi5tb": {
-            "__DOCUMENT_NAME__": "Volcanic Dragon: Ashen Tyrant",
-            "img": "modules/happytreedice-daggerheart-art/pack/adversaries/volcanic-ashen-tyrant.webp"
-        },
-        "ladm7wykhZczYzrQ": {
-            "__DOCUMENT_NAME__": "Volcanic Dragon: Obsidian Predator",
-            "img": "modules/happytreedice-daggerheart-art/pack/adversaries/volcanic-obsidian-predator.webp"
         }
     },
     "daggerheart.domains": {
